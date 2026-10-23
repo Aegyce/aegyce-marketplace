@@ -1,101 +1,73 @@
 # Aegyce Marketplace
 
-A unified marketplace for Aegyce agents, skills, and plugins, with reusable capabilities and links to independently maintained repositories.
+A unified marketplace for Aegyce agents and their reusable skills, with support for independently maintained repositories.
 
-Aegyce 的统一插件市场。小型能力包直接保存在本仓库；需要独立维护的 Agent 或插件可放在其他仓库，通过市场索引接入。当前提供可用于 Codex 与支持自定义插件市场的 ChatGPT 客户端的 skill 插件，Aegyce 原生 Agent 分发格式后续另行适配。
+Aegyce 的统一插件市场，用于分发 Agent 能力包及其包含的 skills。小型能力包可以保存在本仓库；需要独立维护的 Agent 可以放在其他仓库，通过市场索引接入。
 
-## 添加市场与安装
+## 当前状态
 
-### Codex CLI
+当前仓库处于结构与命名规划阶段，仅发布本说明。市场索引和 Agent 能力包尚未发布，暂不提供可安装插件。
 
-```bash
-codex plugin marketplace add Aegyce/aegyce-marketplace
-codex plugin add computer-technical-language@aegyce-marketplace
-```
+## Zenkie · 臻启
 
-更新市场源：
+规划的首个 Agent 为 **Zenkie（臻启）**，类型为 Aegyce 的通用 Agent。
 
-```bash
-codex plugin marketplace upgrade aegyce-marketplace
-```
+Requirement 负责需求的整体规划、分工、协调与验收。没有匹配的领域 Agent 时，由 Zenkie 承接 Requirement 委派的工作，通过 Workspace 组织 Task，调用所需模型、工具和 skills 完成执行，并向 Requirement 回报进展和结果。
 
-更新后在客户端检查已安装插件的版本；会话仍使用旧内容时，新建会话或重启客户端。市场源刷新与插件实际生效分别核对。
+Zenkie 的名称取意于创建者姓名拼音 `zengjianqi` 的首尾音节。名称用于标识通用 Agent，不改变其在 Aegyce 中的职责与管理关系。
 
-### ChatGPT
+### 首项 skill：计算机技术用语规范
 
-在支持该功能的客户端打开“添加插件市场”，填写：
+`computer-technical-language` 作为 Zenkie 内的一项 skill 保存，约束计算机技术领域的术语、措辞、句式和主体表达，适用于技术文档、代码注释、运维说明、故障分析和技术交流。
 
-| 字段 | 内容 |
-| --- | --- |
-| 来源 | `Aegyce/aegyce-marketplace` |
-| Git 引用 | 留空使用默认分支，或填写 `main` |
-| 稀疏路径 | 留空 |
+该 skill 保留原有技术事实、约束、条件与不确定性；后续其他通用 skills 可加入 Zenkie 的同级 skill 目录。
 
-添加后在 **Aegyce Marketplace** 中安装需要的插件。市场添加、插件安装与插件启用分别完成；仅添加市场不代表所有插件已经安装。
+## 规划结构
 
-命令和目录约定见 [Codex CLI 文档](https://learn.chatgpt.com/docs/cli/reference)与[插件打包文档](https://developers.openai.com/plugins/build/plugins)。本仓库作为自定义市场分发，尚未提交到官方公共目录。
-
-## 当前插件
-
-| 插件 | 版本 | 用途 |
-| --- | --- | --- |
-| [计算机技术用语规范](plugins/computer-technical-language/README.md) | 0.1.0 | 规范术语、措辞、句式和主体表达，保留技术事实、条件与不确定性 |
-
-## 仓库结构
+以下为拟采用的目录结构，不代表这些文件已经发布：
 
 ```text
-.agents/plugins/marketplace.json      市场名称与插件来源索引
-plugins/
-└── computer-technical-language/
-    ├── plugin.json                  插件名称、版本、展示信息和许可标识
-    ├── README.md                    插件用途和使用示例
-    ├── LICENSE                      独立分发时保留的许可全文
-    ├── COMMERCIAL-LICENSE.md         商业授权方式与版权声明
-    └── skills/
-        └── computer-technical-language/
-            ├── SKILL.md             完整规则与执行方式
-            └── agents/openai.yaml   Skill 展示信息
-LICENSE                              本仓库默认许可全文
-COMMERCIAL-LICENSE.md                许可范围与商业授权方式
-AGENTS.md                            仓库维护约定
+aegyce-marketplace/
+├── README.md
+├── .agents/
+│   └── plugins/
+│       └── marketplace.json
+└── plugins/
+    └── zenkie/
+        ├── plugin.json
+        ├── README.md
+        ├── LICENSE
+        ├── COMMERCIAL-LICENSE.md
+        └── skills/
+            └── computer-technical-language/
+                ├── SKILL.md
+                └── agents/openai.yaml
 ```
 
-默认分支 `main` 保存市场索引和当前插件内容。每个插件一个目录，开发使用任务分支，版本写入各插件清单。需要发布固定版本时可使用带插件名的 Git 标签，例如 `computer-technical-language/v0.1.0`；该名称是示例，不表示标签已经创建。
+市场条目对应 Zenkie 能力包，`computer-technical-language` 是包内 skill。Codex 与 ChatGPT 的插件清单用于相应客户端分发；Aegyce 原生 Agent 的身份、导入和运行机制按 Aegyce 架构另行适配。
 
-### 接入独立仓库
+默认分支 `main` 用于维护市场介绍、索引和已发布内容。初期按 Agent 目录组织能力包；需要独立维护时可迁到单独仓库，由市场索引引用。模型权重和大型数据集使用独立制品存储。
 
-`.agents/plugins/marketplace.json` 的 `plugins` 数组支持 Git 来源。插件位于独立仓库根目录时，来源写为：
+## 使用方式
 
-```json
-{
-  "source": "url",
-  "url": "https://github.com/OWNER/AGENT-REPO.git",
-  "ref": "v1.0.0"
-}
-```
+市场索引和首个能力包发布后，计划通过支持自定义插件市场的 Codex CLI 或 ChatGPT 客户端添加本仓库，并选择安装 Zenkie。届时补充经过验证的安装与更新方法。
 
-这是 `source` 字段的示例，地址和版本需要替换为真实值；插件名称、分类和安装策略仍按现有索引条目配置。位于远端子目录时使用 `git-subdir` 并指定 `path`。市场仅记录来源，外部插件的许可证由其所属仓库规定。
+当前先通过 GitHub 维护与分发，官方公共目录上架后续另行考虑。
 
-模型权重、大型数据集和媒体资源放在独立制品存储中，由对应插件记录来源、版本及校验信息，不作为市场目录的一部分提交。
+## 完整迁移
 
-## 维护与迁移
+仓库作为 Aegyce 项目中的独立 Git 仓库维护，同时须支持独立克隆和整体迁移：
 
-Skill 规则直接在对应插件的 `SKILL.md` 中维护。修改时同步检查插件版本、显示信息和使用说明，通过分支与 PR 评审。语言规则须结合上下文判断，不扩展为机械禁词表。
-
-本仓库可以独立克隆，也可以作为更大项目中的独立 Git 仓库放置。文件引用以仓库或插件根目录为基准，不依赖父项目、本机绝对路径、外部符号链接或本机已安装的其他 skill。
-
-- **移动本地工作副本**：整体移动仓库目录，保留隐藏目录 `.git` 和 `.agents`。未提交的修改也随目录保留。
-- **更换机器**：先提交并推送需要保留的内容，再克隆仓库；未推送提交及未跟踪文件需另行备份。
-- **已添加的市场源**：通过 GitHub 地址添加的源不受本地开发目录移动影响；通过本地路径添加的源，需要在客户端重新指向新位置。
-- **更换 GitHub 地址**：同步更新 Git remote、README、插件清单中的仓库链接及用户的市场源配置。
-- **单独迁出插件**：整体移动对应 `plugins/<name>/` 目录，保留清单、skill、许可证和商业授权说明，再修改市场索引。插件自身没有指向仓库外的本地依赖。
-
-原项目中的用语规范是本插件的初始来源；插件运行不读取原项目文件，后续在本仓库独立维护。
+- 仓库及能力包内部使用相对路径，不依赖父项目文件、本机绝对路径或仓库外符号链接。
+- 移动本地工作副本时保留整个目录，包括隐藏的 `.git`、`.agents` 及尚未提交的文件。
+- 更换机器前，提交并推送需要保留的内容；未推送提交和未跟踪文件另行备份。
+- 单独迁出 Agent 能力包时，保留其插件清单、skills、许可证及必要资源，并更新市场索引。
+- GitHub 来源不受本地目录位置影响；本地路径来源在移动后需要更新客户端配置。
 
 ## 许可
 
 Copyright © 2026 Aegyce.
 
-本仓库当前的原创 skill 指令、文档及配置材料使用 [CC BY-NC 4.0](LICENSE)：在遵守署名等许可条件的前提下，可用于非商业用途。商业用途须取得版权所有者的单独书面授权，申请方式见[商业授权说明](COMMERCIAL-LICENSE.md)。
+本仓库原创文档和 skill 指令采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)：非商业用途须遵守署名等许可条件，商业用途须另行取得版权所有者的书面授权，法律允许无需许可的情形除外。
 
-后续加入的可执行代码须明确其适用许可；第三方材料和索引指向的外部插件保留各自许可。本仓库许可不自动授予使用这些材料的权利。
+商业授权请联系 [Aegyce](https://github.com/Aegyce)，可通过本仓库 [Issues](https://github.com/Aegyce/aegyce-marketplace/issues) 发起咨询；咨询本身不构成授权。能力包发布时将附带完整许可文本与授权说明。第三方材料及外部 Agent 仓库沿用各自许可。
