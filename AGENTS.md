@@ -6,6 +6,7 @@
 - 需要单独安装的 Skill 使用独立插件；需要配合使用的多个 Skill、MCP 集成、工具等可组成同一插件。市场不提供插件内部组件的安装勾选。
 - 插件内部标识使用小写；显示名称采用 `<Agent>:<capability>`，保留 Agent 正式名称的大小写，如 `Aesy:computer-technical-language`，并明确实际能力。
 - 市场条目提供能力专属的 `description`，以及 `interface` 中的显示名称、简短描述、详细描述、开发者和网站，内容与所引用版本的插件清单一致；网站指向对应 GitHub 能力包入口。验证未安装时的列表和详情，不能只验证安装后的展示。
+- 每个 Skill 的图标须体现自身功能；市场同步保留来源中的专属图标及相对引用，不统一替换为 Agent 或市场标识。图标修改在来源 Agent 仓库完成，并按版本规则同步。
 - 同一市场内插件名称唯一；不同插件可包含同名 Skill，通过所属插件区分。同一插件内 Skill 名称唯一。目录分层不能代替插件清单与命名空间。
 - `sources.json` 登记 Agent 来源与目录，`sources.lock.json` 记录已发布提交及内容摘要。源文件只在 Agent 仓库维护；`plugins/`、市场索引与锁定文件由 `scripts/sync_plugins.py` 生成，不手工改副本。
 - Agent 主分支 push 通过 `repository_dispatch` 触发同步，不设定时检查。跨仓库 Secret 不进入发布内容。
