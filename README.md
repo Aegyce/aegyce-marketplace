@@ -1,7 +1,7 @@
 # Aegyce Marketplace
 
-Aegyce 各 Agent 可复用组件的插件市场，按 Agent 组织。组件可包括 Skill、MCP 集成、工具及使用方 AI 工具支持的其他能力。<br>
-The marketplace for reusable components from Aegyce agents, organized by agent. Components may include skills, MCP integrations, tools, and other capabilities supported by the receiving AI tool.
+Aegyce 各 Agent 可复用组件的插件市场，按 Agent 组织。组件可包括 Skill、MCP 集成、工具，以及 AI 工具支持的其他能力。<br>
+The marketplace for reusable components from Aegyce agents, organized by agent. Components may include skills, MCP integrations, tools, and other capabilities supported by AI tools.
 
 ## 当前插件<br>Available plugins
 
@@ -18,11 +18,11 @@ The marketplace for reusable components from Aegyce agents, organized by agent. 
    If a Git reference is required, use `main` and leave the sparse path empty.
 3. 打开 Aegyce Marketplace，选择所需能力包并安装；例如 `Aesy:computer-technical-language`。<br>
    Open Aegyce Marketplace and install the capability package you need, such as `Aesy:computer-technical-language`.
-4. 市场内容更新后，在使用方工具中刷新市场，再检查已安装插件是否有更新。<br>
-   When the catalog changes, refresh the marketplace in your tool, then check installed plugins for updates.
+4. 市场内容更新后，在所用的 AI 工具中刷新市场，再检查已安装插件是否有更新。<br>
+   When the catalog changes, refresh the marketplace in your AI tool, then check installed plugins for updates.
 
-上述步骤适用于支持此市场格式的 AI 工具，具体入口名称以使用方为准。每次安装包含所选插件内的全部组件；不同能力包可独立选择。<br>
-These steps apply to AI tools that support this marketplace format; interface labels may vary. Each installation includes all components of the selected plugin, while separate capability packages can be selected independently.
+上述步骤适用于支持此市场格式的 AI 工具，具体入口名称以相应工具的界面为准。每次安装包含所选插件内的全部组件；不同能力包可独立选择。<br>
+These steps apply to AI tools that support this marketplace format; refer to your tool’s interface for the exact labels. Each installation includes all components of the selected plugin, while separate capability packages can be selected independently.
 
 ## 许可<br>License
 
