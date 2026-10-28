@@ -5,11 +5,12 @@
   },
   "plugins": [
     {
-      "name": "aesy",
+      "name": "aesy-computer-technical-language",
       "source": {
-        "source": "url",
+        "source": "git-subdir",
         "url": "https://github.com/Aegyce/agent-aesy.git",
-        "sha": "29f173b7a21b32217c508baccad428d863d2b5d9"
+        "sha": "5cb1ebdbd31689c8fcb17fecc4947387a61fe4b9",
+        "path": "./plugins/computer-technical-language"
       },
       "policy": {
         "installation": "AVAILABLE",
