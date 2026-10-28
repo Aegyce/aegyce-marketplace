@@ -7,7 +7,7 @@ Aegyce 各 Agent 可复用组件的插件市场，按 Agent 组织。组件可�
 
 ### Aesy
 
-- [aesy-computer-technical-language](https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language)：提供计算机技术用语 Skill，用于编写、润色和审查技术表达。<br>
+- [Aesy:computer-technical-language](https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language)：提供计算机技术用语 Skill，用于编写、润色和审查技术表达。<br>
   <sub>Provides the computer technical language skill for writing, revising, and reviewing technical language.</sub>
 
 ## 使用方式<br><sub>Usage</sub>
