@@ -24,7 +24,7 @@
         "category": "Productivity",
         "websiteURL": "https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language",
         "defaultPrompt": [
-          "请使用 Aesy 的计算机技术用语规范检查这段说明，保留原有事实、条件和待定状态。"
+          "请使用 Aesy 的计算机技术用语规范，根据我提供的信息编写技术说明，准确表达主体、行为、条件和结果，明确尚未确定的内容。"
         ],
         "composerIcon": "./skills/computer-technical-language/assets/icon.png",
         "logo": "./skills/computer-technical-language/assets/icon.png",
