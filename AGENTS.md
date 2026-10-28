@@ -1,12 +1,15 @@
 # Aegyce Marketplace 维护约定
 
-本仓库维护 Agent 能力包的市场索引，以 `.agents/plugins/marketplace.json` 定位插件来源。
+本仓库维护 Agent 能力包的市场索引和自动生成的发布副本，以 `.agents/plugins/marketplace.json` 定位可安装的本仓库插件。
 
-- `agent-<name>` 仓库维护完整 Agent，可提供多个独立安装的 Plugin。市场按能力包登记，使用 `<agent>-<capability>` 名称及 `git-subdir` 来源指向 `plugins/<capability>/`；不默认把整个 Agent 的能力绑定为一个安装项。
+- `agent-<name>` 仓库维护完整 Agent，可提供多个独立安装的 Plugin。市场按能力包登记，使用 `<agent>-<capability>` 名称及 `local` 来源指向生成的发布目录；不默认把整个 Agent 的能力绑定为一个安装项。
 - 需要单独安装的 Skill 使用独立插件；需要配合使用的多个 Skill、MCP 集成、工具等可组成同一插件。市场不提供插件内部组件的安装勾选。
-- 插件内部标识使用小写；显示名称采用 `<Agent>:<capability>`，保留 Agent 正式名称的大小写，如 `Aesy:computer-technical-language`，并明确实际能力。 市场条目中的 `interface.displayName` 与插件包内显示名称保持一致，验证未安装时的市场列表，不能只验证安装后的详情。
+- 插件内部标识使用小写；显示名称采用 `<Agent>:<capability>`，保留 Agent 正式名称的大小写，如 `Aesy:computer-technical-language`，并明确实际能力。
+- 市场条目提供能力专属的 `description`，以及 `interface` 中的显示名称、简短描述、详细描述、开发者和网站，内容与所引用版本的插件清单一致；网站指向对应 GitHub 能力包入口。验证未安装时的列表和详情，不能只验证安装后的展示。
 - 同一市场内插件名称唯一；不同插件可包含同名 Skill，通过所属插件区分。同一插件内 Skill 名称唯一。目录分层不能代替插件清单与命名空间。
-- Git 来源使用仓库 URL 与可核对的引用。发布索引前确认目标版本可访问且插件可加载；不得发布指向尚未准备好内容的条目。
+- `sources.json` 登记 Agent 来源与目录，`sources.lock.json` 记录已发布提交及内容摘要。源文件只在 Agent 仓库维护；`plugins/`、市场索引与锁定文件由 `scripts/sync_plugins.py` 生成，不手工改副本。
+- Agent 主分支 push 通过 `repository_dispatch` 触发同步，不设定时检查。修改来源、工作流或同步脚本时按需读取 [发布说明](docs/publishing.md)；跨仓库 Secret 不进入发布内容。
+- 校验全部来源后再生成发布文件，同版本内容变化或版本倒退不得覆盖已发布包；包外变更不产生重复发布。
 - 市场仓库须能独立迁移与克隆，不依赖父项目目录、本机绝对路径或仓库外符号链接。
 - README 中文在上，使用 `<br>` 换行，英文以 `<sub>English text</sub>` 小字置于下方；只列已确认的定位、状态、插件与使用方法。技术文案写明主体、条件和结果，保留原有事实与不确定性。
 - 能力说明面向 AI 工具复用；README 不列具体 AI 产品的安装或调用示例，不声称未经验证的兼容性。

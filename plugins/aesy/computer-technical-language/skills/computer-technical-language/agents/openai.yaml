@@ -1,0 +1,6 @@
+interface:
+  display_name: "计算机技术用语规范"
+  short_description: "规范技术文档与答复的术语、措辞和主体表达，保留事实与条件"
+  default_prompt: "请使用 $aesy-computer-technical-language:computer-technical-language 检查并修改这段技术说明，保留原有事实、约束和待定状态。"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.svg"

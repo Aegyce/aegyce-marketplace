@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "aesy-computer-technical-language",
+  "version": "0.2.2",
+  "description": "提供 computer-technical-language Skill，用于编写、润色和审查计算机技术表达，保留原有事实、条件和不确定性。",
+  "author": {
+    "name": "Aegyce",
+    "url": "https://github.com/Aegyce"
+  },
+  "repository": "https://github.com/Aegyce/agent-aesy",
+  "license": "CC-BY-NC-4.0",
+  "keywords": [
+    "aegyce",
+    "aesy",
+    "technical-writing",
+    "chinese"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Aesy:computer-technical-language",
+        "shortDescription": "Aesy 的计算机技术用语能力包，用于规范技术文档与答复。",
+        "longDescription": "提供 computer-technical-language Skill，用于编写、润色和审查计算机技术表达，保留原有事实、条件和不确定性。",
+        "developerName": "Aegyce",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language",
+        "defaultPrompt": [
+          "请使用 Aesy 的计算机技术用语规范检查这段说明，保留原有事实、条件和待定状态。"
+        ],
+        "composerIcon": "./skills/computer-technical-language/assets/icon.png",
+        "logo": "./skills/computer-technical-language/assets/icon.png",
+        "brandColor": "#304D45"
+      }
+    }
+  }
+}

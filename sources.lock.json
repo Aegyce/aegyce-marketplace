@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    {
+      "name": "aesy-computer-technical-language",
+      "repository": "Aegyce/agent-aesy",
+      "ref": "main",
+      "path": "plugins/computer-technical-language",
+      "destination": "plugins/aesy/computer-technical-language",
+      "commit": "9dd9433d0f527f4362bead5ed674495f1a858ccc",
+      "tree": "6138d51b1b22ef401511617072e9f3af2f74e40a",
+      "version": "0.2.2",
+      "sha256": "f5ee6eb1b26cee35dbf966f986542523ea4f1048e9f38492d8a00cb0e7337410"
+    }
+  ]
+}
