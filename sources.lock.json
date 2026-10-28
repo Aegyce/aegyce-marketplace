@@ -6,10 +6,10 @@
       "ref": "main",
       "path": "plugins/computer-technical-language",
       "destination": "plugins/aesy/computer-technical-language",
-      "commit": "24c7bbcff255ccd9912546b0befe54514f34fab0",
-      "tree": "40b6107885851c23f59d5c2333e3a06987091c1a",
-      "version": "0.2.6",
-      "sha256": "f56a5cd60065baf2e3d92b2942e100e4b32d10e9326ac3e43fbba3baf4a84ebd"
+      "commit": "c4f58188d473289dd4d1e53704c49bcf4f63338e",
+      "tree": "e16717c931fbbdac4b3c87edf9bf75d2f15c9ea0",
+      "version": "0.2.7",
+      "sha256": "98aa4fb8d316275057484a608f96824b2af79522b6fc025857d29b0359cbf3c5"
     }
   ]
 }

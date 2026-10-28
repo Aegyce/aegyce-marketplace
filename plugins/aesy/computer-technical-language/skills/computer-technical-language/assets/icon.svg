@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Computer technical language: text lines on a monitor with a writing pencil">
   <rect width="256" height="256" rx="52" fill="#DCE8DD"/>
-  <g transform="translate(0 8)">
+  <g transform="translate(5 8)">
     <rect x="35" y="46" width="176" height="128" rx="14" fill="#FFFFFF" stroke="#304D45" stroke-width="9"/>
     <g fill="none" stroke="#304D45" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
       <path d="M123 175v28m-33 0h66"/>
