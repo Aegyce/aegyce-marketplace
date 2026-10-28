@@ -26,8 +26,8 @@
         "defaultPrompt": [
           "请使用 Aesy 的计算机技术用语规范，根据我提供的信息编写技术说明，写清谁在什么条件下执行什么操作，以及操作的结果，明确尚未确定的内容。"
         ],
-        "composerIcon": "./skills/computer-technical-language/assets/icon.png",
-        "logo": "./skills/computer-technical-language/assets/icon.png",
+        "composerIcon": "./skills/computer-technical-language/assets/icon-dd925da7cc14.png",
+        "logo": "./skills/computer-technical-language/assets/icon-dd925da7cc14.png",
         "brandColor": "#304D45"
       }
     }

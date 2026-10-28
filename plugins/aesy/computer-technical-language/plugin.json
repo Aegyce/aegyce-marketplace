@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aesy-computer-technical-language",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复，统一术语，改进措辞，并保留已有事实、条件和不确定性。",
   "author": {
     "name": "Aegyce",
@@ -27,8 +27,8 @@
         "defaultPrompt": [
           "请使用 Aesy 的计算机技术用语规范，根据我提供的信息编写技术说明，写清谁在什么条件下执行什么操作，以及操作的结果，明确尚未确定的内容。"
         ],
-        "composerIcon": "./skills/computer-technical-language/assets/icon.png",
-        "logo": "./skills/computer-technical-language/assets/icon.png",
+        "composerIcon": "./skills/computer-technical-language/assets/icon-dd925da7cc14.png",
+        "logo": "./skills/computer-technical-language/assets/icon-dd925da7cc14.png",
         "brandColor": "#304D45"
       }
     }

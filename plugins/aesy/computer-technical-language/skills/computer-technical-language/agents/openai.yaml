@@ -2,5 +2,5 @@ interface:
   display_name: "计算机技术用语规范"
   short_description: "统一计算机技术文档与答复中的术语，写清动作与条件，保留已有事实"
   default_prompt: "请使用 $aesy-computer-technical-language:computer-technical-language 根据我提供的信息编写技术说明，写清谁在什么条件下执行什么操作，以及操作的结果，明确尚未确定的内容。"
-  icon_small: "./assets/icon.png"
-  icon_large: "./assets/icon.svg"
+  icon_small: "./assets/icon-dd925da7cc14.png"
+  icon_large: "./assets/icon-54fdb1ce1a8e.svg"
