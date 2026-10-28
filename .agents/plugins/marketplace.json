@@ -1,0 +1,21 @@
+{
+  "name": "aegyce-marketplace",
+  "interface": {
+    "displayName": "Aegyce Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "aesy",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Aegyce/agent-aesy.git",
+        "sha": "cd9c16077a4994006803a8c107cecfa0deaa3ad4"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
