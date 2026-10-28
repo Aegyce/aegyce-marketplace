@@ -1,14 +1,14 @@
 # Aegyce Marketplace
 
-Aegyce 各 Agent 可复用组件的插件市场，按 Agent 组织。组件可包括 Skill、MCP 集成、工具，以及 AI 工具支持的其他能力。<br>
-The marketplace for reusable components from Aegyce agents, organized by agent. Components may include skills, MCP integrations, tools, and other capabilities supported by AI tools.
+Aegyce Marketplace 按 Agent 分类，分发各 Agent 中可复用的组件。组件可包括 Skill、MCP 集成、工具，以及 AI 工具支持的其他能力。<br>
+Aegyce Marketplace distributes reusable components from Aegyce agents, with plugins grouped by agent. Components may include skills, MCP integrations, tools, and other capabilities supported by AI tools.
 
 ## 当前插件<br>Available plugins
 
 ### Aesy
 
-- [Aesy:computer-technical-language](https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language)：提供计算机技术用语 Skill，用于编写、润色和审查技术表达。<br>
-  Provides the computer technical language skill for writing, revising, and reviewing technical language.
+- [Aesy:computer-technical-language](https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language)：提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复。<br>
+  Provides guidance on terminology and wording when drafting, revising, or reviewing technical documentation, code comments, and technical responses.
 
 ## 使用方式<br>Usage
 
@@ -21,8 +21,8 @@ The marketplace for reusable components from Aegyce agents, organized by agent. 
 4. 市场内容更新后，在所用的 AI 工具中刷新市场，再检查已安装插件是否有更新。<br>
    When the catalog changes, refresh the marketplace in your AI tool, then check installed plugins for updates.
 
-上述步骤适用于支持此市场格式的 AI 工具，具体入口名称以相应工具的界面为准。每次安装包含所选插件内的全部组件；不同能力包可独立选择。<br>
-These steps apply to AI tools that support this marketplace format; refer to your tool’s interface for the exact labels. Each installation includes all components of the selected plugin, while separate capability packages can be selected independently.
+上述步骤适用于支持此市场格式的 AI 工具，具体入口名称以相应工具的界面为准。安装插件时会安装其中的全部组件；不同能力包可以分别选择和安装。<br>
+These steps apply to AI tools that support this marketplace format; refer to your tool’s interface for the exact labels. Installing a plugin installs all of its components. You can choose and install each capability package separately.
 
 ## 许可<br>License
 
