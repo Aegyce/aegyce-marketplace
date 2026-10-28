@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Aegyce/agent-aesy.git",
-        "sha": "d097038c1023a1977eb9548d8d3260e07ffbbfed"
+        "sha": "1597c5466bcc19c3fc2617f6e8732a5470fc6250"
       },
       "policy": {
         "installation": "AVAILABLE",
