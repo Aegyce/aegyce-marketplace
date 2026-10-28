@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Computer technical language">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Computer technical writing: a monitor, Chinese character and writing pencil">
   <rect width="256" height="256" rx="52" fill="#DCE8DD"/>
-  <path d="M76 43h71l36 36v126H76a12 12 0 0 1-12-12V55a12 12 0 0 1 12-12Z" fill="#FFFFFF" stroke="#304D45" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M147 43v36h36" fill="#B6CDBB" stroke="#304D45" stroke-width="8" stroke-linejoin="round"/>
-  <g fill="none" stroke="#304D45" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="m99 113-12 13 12 13m51-26 12 13-12 13"/>
-    <path d="m113 140 12-29 12 29m-19-10h14"/>
-    <path d="M91 164h64m-64 18h43"/>
+  <rect x="35" y="46" width="176" height="128" rx="14" fill="#FFFFFF" stroke="#304D45" stroke-width="9"/>
+  <g fill="none" stroke="#304D45" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M123 175v28m-33 0h66"/>
+    <path d="m117 73 7 11m-40 12h70m-18 0c-5 25-19 42-47 54m13-43c9 19 24 32 47 43"/>
   </g>
+  <path d="m159 167 40-53a8 8 0 0 1 11-2l8 6a8 8 0 0 1 2 11l-40 53-26 12Z" fill="#E5BF79" stroke="#304D45" stroke-width="8" stroke-linejoin="round"/>
+  <path d="m159 167 21 15m12-58 21 16" fill="none" stroke="#304D45" stroke-width="7" stroke-linecap="round"/>
 </svg>
