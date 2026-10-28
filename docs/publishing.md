@@ -17,6 +17,8 @@ Agent 仓库维护能力源文件；本仓库保存可直接展示和安装的�
 
 Agent 默认的 `GITHUB_TOKEN` 仅限本仓库，因此跨仓库事件使用上述 Secret；市场提交自身内容使用其默认 `GITHUB_TOKEN`，不另需写入令牌。令牌过期后更新同名 Secret。
 
+通知中的 `agent` 字段取来源仓库名。市场运行标题显示为 `<agent-repository> updated`，例如 `agent-aesy updated`；`agent-updated` 保留为内部事件类型。其他 Agent 接入时沿用同一规则，无需为每个 Agent 增加市场工作流。
+
 ## 同步流程
 
 ```text

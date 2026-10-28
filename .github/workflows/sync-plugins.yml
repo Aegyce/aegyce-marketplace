@@ -1,4 +1,6 @@
 name: Sync plugins
+run-name: >-
+  ${{ github.event_name == 'repository_dispatch' && format('{0} updated', github.event.client_payload.agent || github.event.client_payload.repository) || 'Marketplace updated' }}
 
 on:
   repository_dispatch:
