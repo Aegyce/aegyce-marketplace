@@ -1,0 +1,6 @@
+interface:
+  display_name: "高质感影棚肖像"
+  short_description: "基于原照保留人物特征，统一高质感西服、影棚光线、自然肤质与背景纵深"
+  default_prompt: "请使用 $aesy-studio-portrait:studio-portrait 将我上传的原始照片制作成高质感影棚商务肖像，保留本人五官，采用深蓝灰背景和自然清晰的面部细节。"
+  icon_small: "./assets/icon-ac96a84dc4aa.png"
+  icon_large: "./assets/icon-2570aa8b60c1.svg"

@@ -30,6 +30,33 @@
         "logo": "./skills/computer-technical-language/assets/icon-dd925da7cc14.png",
         "brandColor": "#304D45"
       }
+    },
+    {
+      "name": "aesy-studio-portrait",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aesy/studio-portrait"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design",
+      "description": "提供高质感影棚肖像 Skill，基于用户原始照片制作或修正商务形象照，保持本人五官特征与表情，统一高级西服、影棚布光、自然肤质与深蓝灰背景。",
+      "interface": {
+        "displayName": "Aesy:studio-portrait",
+        "shortDescription": "基于原照保留人物特征，统一高质感西服、影棚光线与自然肤质。",
+        "longDescription": "提供高质感影棚肖像 Skill，基于用户原始照片制作或修正商务形象照。尽量保持本人五官几何与自然表情，统一高级西服、摄影棚布光、细腻清晰肤质、自然眼神光与深蓝灰背景，支持多轮定向修正与画幅核验。",
+        "developerName": "Aegyce",
+        "category": "Design",
+        "websiteURL": "https://github.com/Aegyce/agent-aesy/tree/main/plugins/studio-portrait",
+        "defaultPrompt": [
+          "请使用 Aesy 的高质感影棚肖像规范，将我上传的原始照片制作成高质感影棚商务肖像，保留本人五官，采用深蓝灰背景和自然清晰的面部细节。"
+        ],
+        "composerIcon": "./skills/studio-portrait/assets/icon-ac96a84dc4aa.png",
+        "logo": "./skills/studio-portrait/assets/icon-ac96a84dc4aa.png",
+        "brandColor": "#24384D"
+      }
     }
   ]
 }

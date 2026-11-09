@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Studio portrait: formal suit bust silhouette with studio photography lighting">
+  <rect width="256" height="256" rx="52" fill="#DDE5ED"/>
+  <g transform="translate(6 6)">
+    <!-- Studio photo backdrop frame -->
+    <rect x="44" y="42" width="176" height="132" rx="16" fill="#FFFFFF" stroke="#24384D" stroke-width="9"/>
+    
+    <!-- Studio softbox light at top-left -->
+    <path d="M26 64l22-12 9 16-22 12z" fill="#E5BF79" stroke="#24384D" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M30 70l-8 15m18-6l-4 16" stroke="#24384D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Subtle softbox lighting beam -->
+    <path d="M58 68l28 16m-16-24l22 12" stroke="#E5BF79" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 6"/>
+
+    <!-- Person: Head -->
+    <circle cx="132" cy="88" r="20" fill="#FFFFFF" stroke="#24384D" stroke-width="9"/>
+    
+    <!-- Person: Formal Business Suit Shoulders -->
+    <path d="M80 164c4-23 23-37 40-40l12 18 12-18c17 3 36 17 40 40" fill="#FFFFFF" stroke="#24384D" stroke-width="9" stroke-linejoin="round"/>
+    
+    <!-- Lapels and Tie -->
+    <path d="M120 124l12 28 12-28" fill="none" stroke="#24384D" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M128 136l4 26 4-26-4-4z" fill="#E5BF79" stroke="#24384D" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Studio frame stand / base -->
+    <g fill="none" stroke="#24384D" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M132 174v28m-34 0h68"/>
+    </g>
+  </g>
+</svg>

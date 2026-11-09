@@ -15,6 +15,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "aesy-studio-portrait",
+      "repository": "Aegyce/agent-aesy",
+      "ref": "main",
+      "path": "plugins/studio-portrait",
+      "destination": "plugins/aesy/studio-portrait",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
     }
   ]
 }

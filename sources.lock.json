@@ -10,6 +10,17 @@
       "tree": "27ced1842ceebc2b4ae5594a2fd7fa89faae3cd7",
       "version": "0.3.2",
       "sha256": "7f0cd618b50b427b4f9850b1de4c3379e336e1b987bd169b8194725f270b4924"
+    },
+    {
+      "name": "aesy-studio-portrait",
+      "repository": "Aegyce/agent-aesy",
+      "ref": "main",
+      "path": "plugins/studio-portrait",
+      "destination": "plugins/aesy/studio-portrait",
+      "commit": "af543ed2c3395a2114581cca3797b865b0035193",
+      "tree": "8213714c87558485a079aa35a945f2ba4bbfac66",
+      "version": "0.1.0",
+      "sha256": "890df0f0ef16a5605d8176306e5e3cf35fb3f1b4c3b44beac767a3d10f2b46b7"
     }
   ]
 }
