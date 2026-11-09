@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aesy-computer-technical-language",
-  "version": "0.3.2",
-  "description": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复。统一行业术语，拒用生硬抽象造词，改善人类可读性与行文语流，消除电报体与套路化排比，准确呈现动作主体、运作机理与约束边界。",
+  "version": "0.3.3",
+  "description": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复。统一行业术语，拒用生硬抽象造词，改善人类可读性与行文语流，按内容灵活组合段落、表格、配图与清单等多模态展现形式，准确呈现动作主体、运作机理与约束边界。",
   "author": {
     "name": "Aegyce",
     "url": "https://github.com/Aegyce"
@@ -19,7 +19,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Aesy:computer-technical-language",
-        "shortDescription": "规范技术用语，消除电报体与套路化排比，提升人类阅读体验。",
+        "shortDescription": "规范技术用语，灵活组合段落、表格、配图与清单，提升人类阅读体验。",
         "longDescription": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、架构设计与技术答复。统一术语，改善人类可读性与行文语流，消除电报体与机械套路，讲清运作机理与约束边界，并保留已有事实、条件和不确定性。",
         "developerName": "Aegyce",
         "category": "Productivity",

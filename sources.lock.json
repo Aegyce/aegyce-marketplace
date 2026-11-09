@@ -6,10 +6,10 @@
       "ref": "main",
       "path": "plugins/computer-technical-language",
       "destination": "plugins/aesy/computer-technical-language",
-      "commit": "af543ed2c3395a2114581cca3797b865b0035193",
-      "tree": "27ced1842ceebc2b4ae5594a2fd7fa89faae3cd7",
-      "version": "0.3.2",
-      "sha256": "7f0cd618b50b427b4f9850b1de4c3379e336e1b987bd169b8194725f270b4924"
+      "commit": "48b24d7aa2ac3f8a8d2339156e00c02107b7cecf",
+      "tree": "99cdef5a95ad057b31dc9c0815f08280254f2c2e",
+      "version": "0.3.3",
+      "sha256": "e515dd1fe0687112bfad8b7d9e372c2825af18d70e6d5e3752188638a8a9fa27"
     },
     {
       "name": "aesy-studio-portrait",
