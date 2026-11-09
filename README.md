@@ -7,8 +7,8 @@ Aegyce Marketplace distributes reusable components from Aegyce agents, with plug
 
 ### Aesy
 
-- [Aesy:computer-technical-language](https://github.com/Aegyce/agent-aesy/tree/main/plugins/computer-technical-language)：提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复。<br>
-  Provides guidance on terminology and wording when drafting, revising, or reviewing technical documentation, code comments, and technical responses.
+[Aesy](https://github.com/Aegyce/agent-aesy) 是 Aegyce 的通用 Agent。当 Requirement 未找到适合处理当前任务的领域 Agent 时，由 Aesy 执行其委派的计划。其可复用的 Skill、MCP 集成与工具等组件以独立能力包形式在本市场分发；具体能力与组件详情见其仓库说明。<br>
+[Aesy](https://github.com/Aegyce/agent-aesy) is Aegyce's general-purpose agent. When Requirement cannot find a specialized agent suited to the current task, it delegates the plan to Aesy for execution. Its reusable skills, MCP integrations, and tools are distributed in this marketplace as standalone capability packages; see its repository for detailed capabilities and components.
 
 ## 使用方式<br>Usage
 
