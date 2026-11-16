@@ -15,7 +15,7 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity",
-      "description": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、代码注释与技术答复。统一行业术语，拒用生硬抽象造词，改善人类可读性与行文语流，按内容灵活组合段落、表格、配图与清单等多模态展现形式，准确呈现动作主体、运作机理与约束边界。",
+      "description": "提供计算机技术用语 Skill，用于编写、润色和审查技术文档、架构设计、AI Skill 提示词、代码注释与技术答复。统一行业术语，拒用生硬抽象造词和内部黑话，改善人类可读性与行文语流，按内容灵活组合段落、表格、配图与清单，准确呈现动作主体、运作机理、阻断与建议分级及约束边界。",
       "interface": {
         "displayName": "Aesy:computer-technical-language",
         "shortDescription": "规范技术用语，灵活组合段落、表格、配图与清单，提升人类阅读体验。",
